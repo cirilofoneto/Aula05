@@ -3,12 +3,12 @@ import java.util.Scanner;
 
 public class TeacherHelper {
 
-	public static final double horaAula = 17.50;
+	public static final double horaAula = 17.50; // Contante é uma variavel que não muda valor,não consigo alterar o valor dela. ;
 	public static void main(String[] args) {
 		int opcao=0, numeroAulas, qtdeAlunos, i;
 		double salarioBase, horaAtividade, descansoSemanalRemunerado, salario, notaAluno, mediaAlunos;
 		
-		Random gerador = new Random();
+		Random gerador = new Random();//criado um objeto gerador numerico. 
 		
 		Scanner leitor = new Scanner(System.in);
 		
@@ -55,7 +55,7 @@ public class TeacherHelper {
 				break;
 			case 3:
 				
-				switch(gerador.nextInt(7)) {
+				switch(gerador.nextInt(7)) {//gerado numero aletorio até 7, Lembrado que são casa decimal, Ex: 0 a 6.
 				case 1:
 					System.out.println("Você é um professor incrível!");
 					break;
@@ -74,6 +74,9 @@ public class TeacherHelper {
 				case 6:
 					System.out.println("Obrigado por se colocar à disposição do saber!");
 					break;
+					
+					default:
+						System.out.println("Numero não encontrado");
 					
 				}
 				
