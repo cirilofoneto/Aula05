@@ -65,6 +65,9 @@ public class TeacherHelper {
 			case 3:
 
 				switch (gerador.nextInt(7)) {// gerado numero aletorio até 7, Lembrado que são casa decimal, Ex: 0 a 6.
+				case 0:
+					System.out.println("Que são Alunos não durma ");
+					break;	
 				case 1:
 					System.out.println("Você é um professor incrível!");
 					break;
